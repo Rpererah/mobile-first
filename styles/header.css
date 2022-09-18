@@ -6,6 +6,15 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+/* parte 3 estilizacao */
+
+/* o combinador ~ procura algum outro elemento que esteja em seguida dele ja o > procura algo que esta dentro desse elemento */
+.container__botao:checked ~ .container__rotulo > .cabecalho__menusvg {
+    background-image: url('../img/Menu\ Aberto.svg');
+}
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul);
+}
 .cabecalho{
     background-color: var(--branco);
     display: flex;
@@ -62,12 +71,15 @@ text-transform: uppercase;
 .opcoes{
     display: none;
 }
-
+.container__texto{
+    display: none;
+}
 /*media query e esse screen eh um media type*/
 @media screen and (min-width:1024px) {
     .container__titulo,.container__titulo--negrito{
         font-family: var(--fonte-secundaria);
         font-size: 30px;
+        margin-right: 0.5em;
     }
     .container__titulo{
         font-weight: 400;
@@ -102,5 +114,41 @@ text-transform: uppercase;
     .opcoes__botao{
         display: none;
     }
+    .opcoes__botao:checked ~ .opcoes__rotulo>.opcoes__item{
+        background: var(--azul);
+        color: var(--branco);
+        
+    }
+    .opcoes__item{
+        padding: 2em 1em;
+    }
+    .lista-menu__item:hover{
+        background: var(--azul);
+        
+    }
+    .lista-menu__item:hover> .lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
 
+}
+
+@media screen and (min-width:1728px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color:var(--preto);
+        
+    }
+    .cabecalho{
+        padding: 0 2em;
+    }
+    /* quando usamos o flexbox ele criou um espaco entre os itens mas aqui nos pedimos pro margin empurrar e ocupar esse espaco */
+    .opcoes{
+        margin-right: auto;
+    }
+    .container__texto{
+        display: block;
+    }
 }

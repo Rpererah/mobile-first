@@ -48,3 +48,8 @@ color: var(--azulT);
         width: 30%;
     }
 }
+@media screen and (min-width:1728px) {
+.contato{
+    padding: 3em 10vw ;
+}
+}

@@ -19,7 +19,9 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao" />
-            <label for="menu">
+            <!-- parte 3 estilizacao final  -->
+
+            <label for="menu" class="container__rotulo">
                 <span class="cabecalho__menusvg container__imagem"></span>
             </label>
             <ul class="lista-menu">
@@ -39,8 +41,8 @@
         <!-- parte 2 com media query -->
         <ul class="opcoes">
             <!-- apos remover o menu hamburguer apenas -->
-            <input type="checkbox" name="opcoes__botao" id="opcoes__botao" class="opcoes__botao"/>
-            <label for="opcoes__botao">
+            <input type="checkbox" name="opcoes__botao" id="opcoes__botao" class="opcoes__botao" />
+            <label for="opcoes__botao" class="opcoes__rotulo">
                 <li class="opcoes__item">
                     Categorias
                 </li>
@@ -64,10 +66,24 @@
 
         <div class="container">
             <!--Na parte 2 adicionaremos a classe pra modificalo -->
-            <a href="#"><img src="img/Favoritos.svg" alt="imagem menu favorito"
-                    class="container__imagem container__imagem-transparent"></a>
-            <a href="#"><img src="img/Compras.svg" alt="imagem menu sacola compras" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuario.svg" alt="imagem menu usuarios" class="container__imagem"></a>
+            <a href="#">
+                <img src="img/Favoritos.svg" alt="imagem menu favorito"
+                    class="container__imagem container__imagem-transparent">
+            </a>
+            <!-- parte 3 adicionamos uma classe pois nao havia -->
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="imagem menu sacola compras" class="container__imagem">
+                <!-- parte 3 desktop -->
+                <p class="container__texto">
+                    Minha Sacola
+                </p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="imagem menu usuarios" class="container__imagem">
+                <p class="container__texto">
+                    Meu Perfil
+                </p>
+            </a>
         </div>
     </header>
     <section class="banner">
@@ -78,56 +94,62 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
     </section>
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka"></div>
-            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre lideranca"></div>
-            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
-            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre front-end"></div>
-            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
-            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
-
-            ...
-        </div>
+    <!-- parte 3 adicionamos a div para dividir -->
+    <div class="carrossel__container">
 
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre lideranca"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre front-end"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
 
-    </div>
-    <div class="card">
-        <!-- 1º linha -->
-        <div class="card__descricao">
-            <!-- 1º coluna -->
-            <div class="descricao">
-                <h3 class="descricao__titulo">Talvez voce tambem se interesse por...</h3>
-                <h2 class="descricao__titulo-livro">Angular 11 e firebase</h2>
-                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google</p>
+                ...
             </div>
-            <!-- 2º coluna -->
-            <img src="img/Perfil-escritora 2.svg" class="descricao__imagem" alt="Imagem do angular">
-        </div>
-        <!-- 2ºlinha -->
-        <div class="card__botoes">
-            <!-- 1ºcoluna -->
-            <ul class="botoes">
-                <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
-                <li class="botoes__item"><img src="img/Compras.svg" alt="colocar no carrinho livro"></li>
-            </ul>
-            <!-- 2ºcoluna -->
-            <a href="#" class="botoes__ancora">Saiba mais</a>
 
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descricao">
+                <!-- 1º coluna -->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez voce tambem se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google</p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/Perfil-escritora 2.svg" class="descricao__imagem" alt="Imagem do angular">
+            </div>
+            <!-- 2ºlinha -->
+            <div class="card__botoes">
+                <!-- 1ºcoluna -->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
+                    <li class="botoes__item"><img src="img/Compras.svg" alt="colocar no carrinho livro"></li>
+                </ul>
+                <!-- 2ºcoluna -->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+
+            </div>
         </div>
     </div>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Mais vendidos</h2>
     </section>
+    <div class="carrossel__container">
     <!-- Slider main container -->
     <div class="swiper">
         <!-- If we need pagination -->
@@ -180,7 +202,7 @@
 
         </div>
     </div>
-
+</div>
     <section class="topicos">
         <h2 class="topicos__titulo">TOPICOS VISITADOS RECENTEMENTE</h2>
         <ul class="topicos__lista">
@@ -213,10 +235,10 @@
     <section class="contato">
         <div class="contato__descricao">
 
-        
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books,novos livros,promoções e outros.</p>
-    </div>
+
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books,novos livros,promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu email" class="contato__email" />
     </section>
     <hr />
@@ -224,19 +246,19 @@
         <h2 class="rodape__titulo">Grupo Ana Rita Books</h2>
         <!-- parte 2 media query -->
         <ul class="lista-rodape">
-                <li class="lista-rodape__titulo">
-                    Educação
-                </li>
-                <li class="lista-rodape__item">
-                    <img class="lista-rodape__imagem" src="img/logo1.png" alt="logo educaocao">
-                    <a href="#" class="lista-rodape__link">Escola 1</a>
+            <li class="lista-rodape__titulo">
+                Educação
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo1.png" alt="logo educaocao">
+                <a href="#" class="lista-rodape__link">Escola 1</a>
 
-                </li>
-                <li class="lista-rodape__item">
-                    <img class="lista-rodape__imagem" src="img/logo2.png" alt="logo educaocao 2">
-                    <a href="#" class="lista-rodape__link" >Escola 2</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo2.png" alt="logo educaocao 2">
+                <a href="#" class="lista-rodape__link">Escola 2</a>
 
-                </li>
+            </li>
 
         </ul>
         <ul class="lista-rodape">
@@ -280,48 +302,48 @@
             </li>
 
 
-    </ul>
-    <ul class="lista-rodape">
-        <li class="lista-rodape__titulo">
-            Bibliotecas Parceiras
-        </li>
-        <li class="lista-rodape__item">
-            <img class="lista-rodape__imagem" src="img/logo10.png" alt="logo educaocao">
-            <a href="#" class="lista-rodape__link">Biblioteca 1</a>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">
+                Bibliotecas Parceiras
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo10.png" alt="logo educaocao">
+                <a href="#" class="lista-rodape__link">Biblioteca 1</a>
 
-        </li>
-        <li class="lista-rodape__item">
-            <img class="lista-rodape__imagem" src="img/logo11.png" alt="logo educaocao 2">
-            <a href="#" class="lista-rodape__link">Biblioteca 2</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo11.png" alt="logo educaocao 2">
+                <a href="#" class="lista-rodape__link">Biblioteca 2</a>
 
-        </li>
-        <li class="lista-rodape__item">
-            <img class="lista-rodape__imagem" src="img/logo12.png" alt="logo educaocao 2">
-            <a href="#" class="lista-rodape__link">Biblioteca 3</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo12.png" alt="logo educaocao 2">
+                <a href="#" class="lista-rodape__link">Biblioteca 3</a>
 
-        </li>
-        <li class="lista-rodape__item">
-            <img class="lista-rodape__imagem" src="img/logo13.png" alt="logo educaocao 2">
-            <a href="#" class="lista-rodape__link">Biblioteca 4</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo13.png" alt="logo educaocao 2">
+                <a href="#" class="lista-rodape__link">Biblioteca 4</a>
 
-        </li>
-        <li class="lista-rodape__item">
-            <img class="lista-rodape__imagem" src="img/logo14.png" alt="logo educaocao 2">
-            <a href="#" class="lista-rodape__link">Biblioteca 5</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo14.png" alt="logo educaocao 2">
+                <a href="#" class="lista-rodape__link">Biblioteca 5</a>
 
-        </li>
-        <li class="lista-rodape__item">
-            <img class="lista-rodape__imagem" src="img/logo15.png" alt="logo educaocao 2">
-            <a href="#" class="lista-rodape__link">Biblioteca 6</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo15.png" alt="logo educaocao 2">
+                <a href="#" class="lista-rodape__link">Biblioteca 6</a>
 
-        </li>
-        <li class="lista-rodape__item">
-            <img class="lista-rodape__imagem" src="img/logo16.png" alt="logo educaocao 2">
-            <a href="#" class="lista-rodape__link">Biblioteca 7</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo16.png" alt="logo educaocao 2">
+                <a href="#" class="lista-rodape__link">Biblioteca 7</a>
 
-        </li>
+            </li>
 
-</ul>
+        </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swipper.js"></script>
