@@ -1,0 +1,33 @@
+@import url("styles/header.css");
+
+/*parte 2 da aula*/
+@import url("styles/banner.css");
+
+
+/*parte 3 com js*/
+@import url("styles/carrossel.css");
+
+/*parte 4 topicos*/
+@import url("styles/topicos.css");
+
+/*parte 5 contatos*/
+@import url("styles/contato.css");
+
+/*parte final mobile rodape*/
+@import url("styles/rodape.css");
+
+:root{
+    --cor-de-fundo:#EBECEE;
+    --branco:#f7f7f7;
+    --laranja:#eb9b00;
+    --azul:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal:"Poppins";
+    --azulT:#002F52;
+
+}
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
