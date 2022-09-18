@@ -23,6 +23,10 @@
     --azul:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal:"Poppins";
     --azulT:#002F52;
+    --fonte-secundaria:"Josefin sans";
+    --preto:rgb(12, 12, 12);
+    --cinza:#474646;
+    --cinza-claro:#858585;
 
 }
 body{

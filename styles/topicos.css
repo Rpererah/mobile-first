@@ -18,7 +18,7 @@ padding: 1em;
     justify-content: center;
 }
 .topicos__item{
-    margin: 1.5em 0.4em;
+    margin: 2em 0.6em;
 }
 .topicos__link{
     color: var(--branco);
@@ -27,4 +27,13 @@ padding: 1em;
     text-decoration: none;
     font-weight: 700;
     font-size: 14;
+}
+
+@media screen and (min-width:1024px) {
+    .topicos__titulo{
+        font-size: 24px;
+    }
+    .topicos__link{
+        font-size: 24px;
+    }
 }

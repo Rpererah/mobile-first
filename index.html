@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,9 +31,41 @@
                 <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
             </ul>
             <img src="img/logo.png" alt="logoAR" height="32px" width="32px" class="container__imagem" />
+
+            <!-- parte 2 com media query -->
+            <h1 class="container__titulo"><strong class="container__titulo--negrito">AR</strong>Library</h1>
+            <!-- parte 2 com media query -->
         </div>
+        <!-- parte 2 com media query -->
+        <ul class="opcoes">
+            <!-- apos remover o menu hamburguer apenas -->
+            <input type="checkbox" name="opcoes__botao" id="opcoes__botao" class="opcoes__botao"/>
+            <label for="opcoes__botao">
+                <li class="opcoes__item">
+                    Categorias
+                </li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-end</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
+            </ul>
+            <!-- ^^ apos remover o menu hamburguer apenas -->
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Favoritos</a>
+            </li>
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Minha Estante</a>
+            </li>
+        </ul>
+        <!-- parte 2 com media query -->
+
         <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="imagem menu favorito" class="container__imagem"></a>
+            <!--Na parte 2 adicionaremos a classe pra modificalo -->
+            <a href="#"><img src="img/Favoritos.svg" alt="imagem menu favorito"
+                    class="container__imagem container__imagem-transparent"></a>
             <a href="#"><img src="img/Compras.svg" alt="imagem menu sacola compras" class="container__imagem"></a>
             <a href="#"><img src="img/Usuario.svg" alt="imagem menu usuarios" class="container__imagem"></a>
         </div>
@@ -61,7 +94,7 @@
 
             ...
         </div>
-        
+
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
@@ -111,7 +144,7 @@
 
             ...
         </div>
-        
+
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
@@ -124,7 +157,7 @@
             <!-- 1º coluna -->
             <div class="descricao">
                 <script>
-                    for(i=0;i<5;i++){
+                    for (i = 0; i < 5; i++) {
                         document.write('<img src="img/Star.svg" alt="estrelas avaliacao"/>')
                     }
                 </script>
@@ -178,13 +211,117 @@
         </ul>
     </section>
     <section class="contato">
+        <div class="contato__descricao">
+
+        
         <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
         <p class="contato__texto">Atualizações de e-books,novos livros,promoções e outros.</p>
+    </div>
         <input type="email" placeholder="Cadastre seu email" class="contato__email" />
     </section>
-    <hr/>
+    <hr />
     <footer class="rodape">
         <h2 class="rodape__titulo">Grupo Ana Rita Books</h2>
+        <!-- parte 2 media query -->
+        <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">
+                    Educação
+                </li>
+                <li class="lista-rodape__item">
+                    <img class="lista-rodape__imagem" src="img/logo1.png" alt="logo educaocao">
+                    <a href="#" class="lista-rodape__link">Escola 1</a>
+
+                </li>
+                <li class="lista-rodape__item">
+                    <img class="lista-rodape__imagem" src="img/logo2.png" alt="logo educaocao 2">
+                    <a href="#" class="lista-rodape__link" >Escola 2</a>
+
+                </li>
+
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">
+                Escolas Online
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo3.png" alt="logo educaocao ead1">
+                <a href="#" class="lista-rodape__link">Escola Online 1</a>
+
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo4.png" alt="logo educaocao online 2">
+                <a href="#" class="lista-rodape__link">Escola Online 2</a>
+
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo5.png" alt="logo educaocao online 3">
+                <a href="#" class="lista-rodape__link">Escola Online 3</a>
+
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo6.png" alt="logo educaocao online 4">
+                <a href="#" class="lista-rodape__link">Escola Online 4</a>
+
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo7.png" alt="logo educaocao online 5">
+                <a href="#" class="lista-rodape__link">Escola Online 5</a>
+
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo8.png" alt="logo educaocao online 6">
+                <a href="#" class="lista-rodape__link">Escola Online 6</a>
+
+            </li>
+            <li class="lista-rodape__item">
+                <img class="lista-rodape__imagem" src="img/logo9.png" alt="logo educaocao online 7">
+                <a href="#" class="lista-rodape__link">Escola Online 7</a>
+
+            </li>
+
+
+    </ul>
+    <ul class="lista-rodape">
+        <li class="lista-rodape__titulo">
+            Bibliotecas Parceiras
+        </li>
+        <li class="lista-rodape__item">
+            <img class="lista-rodape__imagem" src="img/logo10.png" alt="logo educaocao">
+            <a href="#" class="lista-rodape__link">Biblioteca 1</a>
+
+        </li>
+        <li class="lista-rodape__item">
+            <img class="lista-rodape__imagem" src="img/logo11.png" alt="logo educaocao 2">
+            <a href="#" class="lista-rodape__link">Biblioteca 2</a>
+
+        </li>
+        <li class="lista-rodape__item">
+            <img class="lista-rodape__imagem" src="img/logo12.png" alt="logo educaocao 2">
+            <a href="#" class="lista-rodape__link">Biblioteca 3</a>
+
+        </li>
+        <li class="lista-rodape__item">
+            <img class="lista-rodape__imagem" src="img/logo13.png" alt="logo educaocao 2">
+            <a href="#" class="lista-rodape__link">Biblioteca 4</a>
+
+        </li>
+        <li class="lista-rodape__item">
+            <img class="lista-rodape__imagem" src="img/logo14.png" alt="logo educaocao 2">
+            <a href="#" class="lista-rodape__link">Biblioteca 5</a>
+
+        </li>
+        <li class="lista-rodape__item">
+            <img class="lista-rodape__imagem" src="img/logo15.png" alt="logo educaocao 2">
+            <a href="#" class="lista-rodape__link">Biblioteca 6</a>
+
+        </li>
+        <li class="lista-rodape__item">
+            <img class="lista-rodape__imagem" src="img/logo16.png" alt="logo educaocao 2">
+            <a href="#" class="lista-rodape__link">Biblioteca 7</a>
+
+        </li>
+
+</ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swipper.js"></script>
